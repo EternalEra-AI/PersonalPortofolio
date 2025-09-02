@@ -4,7 +4,6 @@
 Situs ini dibuat dengan **Gatsby (React)** dan di-deploy sebagai **static site** di server Linux (Nginx).
 
 **Live:** https://gumxlarcw.id  
-**Preview:** ![OpenGraph](./og.png)
 
 ---
 
